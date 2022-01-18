@@ -15,7 +15,7 @@ const main = async () => {
     const types = {
         Claim: [
             { name: 'claimer', type: 'address' },
-            { name: 'tokenIdx', type: 'uint' },
+            { name: 'token', type: 'address' },
             { name: 'amount', type: 'uint256' },
             { name: 'nonce', type: 'uint256' },
         ]
@@ -23,7 +23,7 @@ const main = async () => {
 
     const value = {
         claimer: process.env.ADDRESS,
-        tokenIdx: 0,
+        token: "0x4dbcdf9b62e891a7cec5a2568c3f4faf9e8abe2b", // USDC
         amount: '100000000',
         nonce: 2
     };

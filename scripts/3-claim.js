@@ -5,10 +5,10 @@ const main = async () => {
     const contract = await MyContract.attach(process.env.CONTRACT_ADDRESS);
 
     await contract.claim(
-        0, // Token index
-        100000000, // amount
-        2, // nonce
-        "0xa37de85685e9905a0dce7afbd8797daf81dec050ad69afb7bf04771db8251e070d157882baab7d2047b331966cda5d4ac9fb81fb074d15edf6dce4b2fa483adf1b" // signature
+        '0x4dbcdf9b62e891a7cec5a2568c3f4faf9e8abe2b', // Token (USDC)
+        1000000, // amount
+        8, // nonce
+        "0x3a2094288c9a60bc97d5e6d0d8c6da781ea7138df06771012ad417a7377f6b716e378b0dc88edd9478c2ad9fd1ef93ff052b8230d98fc6aaef9f9339486e4d971b" // signature
     ); 
     console.log('Successfully claimed!')
 };
